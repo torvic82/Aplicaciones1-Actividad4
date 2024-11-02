@@ -132,7 +132,7 @@ figure_histograma=grafico_histograma(df_2020)
 
 ## Crear la app de Dash
 app = Dash()
-
+server=app.server
 Titulo=html.Div([ 
     html.H1('Dashboard Actividad 4 -COVID-19',style={'textAlign' : 'center'})
      ],className="text-center")
@@ -191,4 +191,4 @@ app.layout=html.Div(
 
 # Ejecutar la aplicación
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.run_server(debug=False)
