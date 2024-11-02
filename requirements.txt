@@ -1,5 +1,4 @@
 dash
 pandas
 numpy
-json
-plotly.express
+
